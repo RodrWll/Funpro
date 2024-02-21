@@ -45,7 +45,7 @@ int isFibonacci(int n)
 {
     //5 * n^2 + 4 or 5 * n^2 - 4 results in a perfect square, n is a Fibonacci number
     //but we'll not use sqrt() function to probe if n is a perfect square
-    return numberIsSquare(5 * n * n + 4) || numberIsSquare(5 * n * n - 4);
+    return numberIsSquare(5 * n * n + 4) || numberIsSquare(5 * n * n - 4) || n == 0 || n == 1;
 }
 int positionInFibonacci(int n)
 {
